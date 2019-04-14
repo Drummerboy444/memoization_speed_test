@@ -7,8 +7,7 @@ def list_memoization_factorial(numbers):
             return memos[n]
 
         if n is 0:
-            return 1
-            
+            return 1 
 
         ans = n * memoization_factorial(n - 1)
         memos[n] = ans
